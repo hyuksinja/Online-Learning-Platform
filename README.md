@@ -1,1 +1,14 @@
 # Online-Learning-Platform
+
+COMPANY: CODTECH IT SOLUTIONS
+
+NAME: GOPIKA B
+
+INTERN ID: CT04DK927
+
+DOMAIN:Full Stack Development
+
+DURATION: 4 weeks
+
+MENTOR: NEELA SANTHOSH
+
