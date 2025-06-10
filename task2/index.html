@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODTECH Online Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">CODTECH Learn</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active" data-section="dashboard">Dashboard</a></li>
+                    <li><a href="#" class="nav-link" data-section="courses">Courses</a></li>
+                    <li><a href="#" class="nav-link" data-section="profile">Profile</a></li>
+                    <li><a href="#" class="nav-link" data-section="settings">Settings</a></li>
+                    <li><a href="#" class="nav-link" data-section="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <aside class="sidebar">
+            <h2>Course Content</h2>
+            <ul id="lesson-list" class="lesson-list">
+                </ul>
+        </aside>
+
+        <section class="learning-area">
+            <div class="video-player-container">
+                <h2 id="current-lesson-title">Welcome to CODTECH Learning!</h2>
+                <div class="video-wrapper">
+                    <iframe id="video-player" width="100%" height="450" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-controls">
+                    <button id="mark-complete-btn" class="btn primary-btn"><i class="fas fa-check-circle"></i> Mark as Complete</button>
+                    <button id="next-lesson-btn" class="btn secondary-btn"><i class="fas fa-forward"></i> Next Lesson</button>
+                </div>
+            </div>
+
+            <div class="quiz-section" style="display: none;">
+                <h2>Quiz: <span id="quiz-title"></span></h2>
+                <div id="quiz-questions">
+                    </div>
+                <button id="submit-quiz-btn" class="btn primary-btn" style="display: none;"><i class="fas fa-paper-plane"></i> Submit Quiz</button>
+                <div id="quiz-result" class="quiz-result" style="display: none;"></div>
+            </div>
+
+            <div class="progress-section">
+                <h2>Your Progress</h2>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="course-progress-bar" style="width: 0%;"></div>
+                </div>
+                <p id="progress-text">0% Complete</p>
+                <button id="download-certificate-btn" class="btn success-btn" style="display: none;"><i class="fas fa-award"></i> Download Certificate</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CODTECH. All rights reserved. <br> Completion Certificate will be issued on your internship end date.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
