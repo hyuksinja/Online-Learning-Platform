@@ -61,3 +61,6 @@ npm start 🏁 Internship Context This project is developed as part of an intern
 Live classes and chat support
 
 Payment integration for premium content
+
+*OUTPUT*
+![Image](https://github.com/user-attachments/assets/682fc4d2-f696-49d0-a5d3-77665b3caee0)
